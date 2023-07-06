@@ -61,12 +61,10 @@ console.log(crazyDiff(31));
 /* SCRIVI QUI LA TUA RISPOSTA */
 const boundary = function (n) {
   let answer = 0;
-  if (n <= 20 && n >= 100) {
-    answer = true;
-  } else if ((n = 400)) {
-    answer = true;
+  if ((n > 20 && n <= 100) || n === 400) {
+    return true;
   }
-  return answer;
+  return false;
 };
 console.log(boundary(87));
 console.log(boundary(400));
